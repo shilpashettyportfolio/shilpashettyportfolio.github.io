@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.jpg" alt="Shilpa Shetty" width="50">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Shilpa Shetty">Shilpa Shetty</h1>
+
+          <p class="title">Architect</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:gshilpashetty@yahoo.co.in" class="contact-link">gshilpashetty@yahoo.co.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91-9880892213" class="contact-link">+91- 9880892213</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-06-06">April 23, 1974</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bangalore, Karnataka, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            As a passionate architect with decades of experience, I believe that great design is about more than just structures—it's about creating spaces that inspire, nurture, and connect people. My journey has taken me from high school in Mangaluru to leading projects across residences, schools, commercial complexes, and more. I am driven by creativity, attention to detail, and a deep commitment to client needs. Whether collaborating with teams or guiding clients through the design process, I strive to blend functionality with beauty, always seeking to leave a positive impact on the communities I serve. Outside of architecture, I find inspiration in nature, books, and new adventures, which continually fuel my creativity and vision.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+<br>
+<br>
+        <section class="service">
+
+          <h3 class="h3 service-title">My Interests</h3>
+          <br>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="icon-box service-icon-box">
+                <!-- Book icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="color: var(--orange-yellow-crayola);">
+                  <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893C6.545 1.797 8 2.5 8 2.5s1.455-.703 3.612-.565c1.234.124 2.503.523 3.388.893V14c-.885-.37-2.154-.769-3.388-.893C9.455 13.203 8 13.906 8 13.906s-1.455-.703-3.612-.565C3.154 13.231 1.885 13.63 1 14V2.828zM8 3.5c-1.104 0-2.5.448-3.5.857V13.14c1-.409 2.396-.857 3.5-.857s2.5.448 3.5.857V4.357C10.5 3.948 9.104 3.5 8 3.5z"/>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Reading</h4>
+                <p class="service-item-text">
+                  Exploring new ideas and worlds through books is a constant source of inspiration.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="icon-box service-icon-box">
+                <!-- Flower icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="color: var(--orange-yellow-crayola);">
+                  <path d="M8 0a2 2 0 0 1 2 2c0 .342-.07.668-.197.96A2.5 2.5 0 0 1 13.5 5.5c0 .342-.07.668-.197.96A2 2 0 1 1 16 8a2 2 0 0 1-2 2c-.342 0-.668-.07-.96-.197A2.5 2.5 0 0 1 10.5 13.5c0 .342.07.668.197.96A2 2 0 1 1 8 16a2 2 0 0 1-2-2c0-.342.07-.668.197-.96A2.5 2.5 0 0 1 2.5 10.5c-.342 0-.668.07-.96.197A2 2 0 1 1 0 8a2 2 0 0 1 2-2c.342 0 .668.07.96.197A2.5 2.5 0 0 1 5.5 2.5c0-.342-.07-.668-.197-.96A2 2 0 0 1 8 0zm0 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0zM8 15a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1 8a1 1 0 1 0 2 0 1 1 0 0 0-2 0zm7-3a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Gardening</h4>
+                <p class="service-item-text">
+                  Tending to my garden brings peace and a sense of growth, both literally and creatively.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="icon-box service-icon-box">
+                <!-- Globe icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="color: var(--orange-yellow-crayola);">
+                  <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0 0 14A7 7 0 0 0 8 1zm0 1a6 6 0 0 1 0 12A6 6 0 0 1 8 2zm0 1a5 5 0 0 0 0 10A5 5 0 0 0 8 3z"/>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Travelling</h4>
+                <p class="service-item-text">
+                  Discovering new places and cultures broadens my perspective and enriches my designs.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="icon-box service-icon-box">
+                <!-- Triangle (hiking) icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="color: var(--orange-yellow-crayola);">
+                  <path d="M7.022 1.566a1 1 0 0 1 1.956 0l6.857 12.857A1 1 0 0 1 14.929 16H1.071a1 1 0 0 1-.906-1.577L7.022 1.566zm.978 1.09L2.143 14h11.714L8 2.656z"/>
+                </svg>
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Hiking</h4>
+                <p class="service-item-text">
+                  Hiking in nature helps me recharge and sparks new creative ideas.
+                </p>
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+            </div>
+
+            <div class="modal-content">
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+      </article>
+
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">St Agnes Girls High School, Mangaluru</h4>
+        <span>1987 — 1990</span>
+              <p class="timeline-text">
+          High School<br>
+          10th Std - 98%
+              </p>
+            </li>
+
+            <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">PUC</h4>
+        <span>1990 — 1992</span>
+              <p class="timeline-text">
+          12th Std - 91%
+              </p>
+            </li>
+
+            <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Malad College Of Engineering, Hassan</h4>
+        <span>1992 — 1997</span>
+              <p class="timeline-text">
+          Bachelor's Degree in Architecture<br>
+          Percentage - 62%
+        </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Architectural Intern | <i>Shirish Beri and Associates, Kolhapur</i></h4>
+        <span>Nov, 1995 — April, 1996</span>
+            </li>
+
+            <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Senior Architect | <i>Cauvery Associates, Architects & Engineers, Bengaluru</i></h4>
+        <span>Feb, 1998 — Current</span>
+            </li>
+
+          </ol>
+
+        </section>
+        
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+      <h3 class="h3">Projects</h3>
+          </div>
+          <ol class="timeline-list">
+              <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Residences</h4>
+              </li>
+              <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">School</h4>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Nursing Home</h4>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Farm Houses</h4>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Commercial Complexes</h4>
+              </li>
+            </ol>
+          </section>
+
+  <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <div class="skills content-card">
+      <p class="timeline-text">
+        Design , Creative , Reliable , Attention to detail , Communication , Initiative , Team Work
+      </p>
+          </div>
+        </section>
+
+      </article>
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO (ARCHITECTURE SHOWCASE)
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="arch-portfolio">
+          <div class="arch-project-toggles">
+            <button class="arch-toggle active" data-project="0">Project 1</button>
+            <button class="arch-toggle" data-project="1">Project 2</button>
+            <button class="arch-toggle" data-project="2">Project 3</button>
+            <button class="arch-toggle" data-project="3">Project 4</button>
+            <button class="arch-toggle" data-project="4">Project 5</button>
+              </div>
+          <div class="arch-projects-container">
+            <!-- Project 1 -->
+            <div class="arch-project-slide active" data-project-slide="0">
+              <div class="arch-description">
+                <h3>Project 1 - Residential - Nalini</h3>
+                <p>A modern villa design featuring open spaces, natural lighting, and sustainable materials. The project emphasizes harmony between indoor and outdoor living.</p>
+          </div>
+              <div class="arch-gallery">
+                <button class="gallery-arrow left" data-gallery-left="0">&#8592;</button>
+                <div class="carousel-wrapper">
+                  <img class="gallery-image" data-gallery-img="0" src="./assets/images/projects/Residential - Nalini/Photos/BEDRM.jpg" alt="Project 1 Photo" />
+                  <button class="enlarge-btn" data-enlarge="0" title="Enlarge"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                  <div class="img-caption" data-img-caption="0"></div>
+                  </div>
+                <button class="gallery-arrow right" data-gallery-right="0">&#8594;</button>
+                  </div>
+              <div class="arch-plan-carousel-view" data-plan-carousel-view="0" style="display:none;">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-plan-gallery-left="0">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="plan-image" data-plan-gallery-img="0" src="./assets/images/projects/Residential - Nalini/Plans/SITE PLAN.jpg" alt="Project 1 Plan" />
+                    <button class="enlarge-btn plan-enlarge" data-plan-enlarge="0" title="Enlarge Plan"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-plan-caption="0"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-plan-gallery-right="0">&#8594;</button>
+                  </div>
+                  </div>
+              <div class="arch-view-toggle" style="margin-top:1.2rem;">
+                <button class="view-btn active" data-view="photos" data-project-view="0">Photos</button>
+                <button class="view-btn" data-view="plan" data-project-view="0">Plans</button>
+                  </div>
+                  </div>
+            <!-- Project 2 -->
+            <div class="arch-project-slide" data-project-slide="1">
+              <div class="arch-description">
+                <h3>Project 2 - H1</h3>
+                <p>An urban apartment complex designed for efficient use of space and community living. Features include rooftop gardens and smart home integration.</p>
+              </div>
+              <div class="arch-gallery-view" data-gallery-view="1">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-gallery-left="1">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="gallery-image" data-gallery-img="1" src="./assets/images/projects/H1/Photos/ELEVATION FROM GARDEN.jpg" alt="Project 2 Photo" />
+                    <button class="enlarge-btn" data-enlarge="1" title="Enlarge"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-img-caption="1"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-gallery-right="1">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-plan-carousel-view" data-plan-carousel-view="1" style="display:none;">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-plan-gallery-left="1">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="plan-image" data-plan-gallery-img="1" src="./assets/images/projects/H1/Plans/SMITHA  H-1 GF PLAN-Model.jpg" alt="Project 2 Plan" />
+                    <button class="enlarge-btn plan-enlarge" data-plan-enlarge="1" title="Enlarge Plan"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-plan-caption="1"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-plan-gallery-right="1">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-view-toggle" style="margin-top:1.2rem;">
+                <button class="view-btn active" data-view="photos" data-project-view="1">Photos</button>
+                <button class="view-btn" data-view="plan" data-project-view="1">Plans</button>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="arch-project-slide" data-project-slide="2">
+              <div class="arch-description">
+                <h3>Project 3 - H2</h3>
+                <p>A community center designed to foster social interaction and inclusivity, with multi-purpose halls, green spaces, and accessible facilities.</p>
+              </div>
+              <div class="arch-gallery-view" data-gallery-view="2">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-gallery-left="2">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="gallery-image" data-gallery-img="2" src="./assets/images/projects/H2/Photos/VIEW FROM FF.jpg" alt="Project 3 Photo" />
+                    <button class="enlarge-btn" data-enlarge="2" title="Enlarge"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-img-caption="2"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-gallery-right="2">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-plan-carousel-view" data-plan-carousel-view="2" style="display:none;">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-plan-gallery-left="2">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="plan-image" data-plan-gallery-img="2" src="./assets/images/projects/H2/Plans/H2- GF,FF,TF PLAN.jpg" alt="Project 3 Plan" />
+                    <button class="enlarge-btn plan-enlarge" data-plan-enlarge="2" title="Enlarge Plan"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-plan-caption="2"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-plan-gallery-right="2">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-view-toggle" style="margin-top:1.2rem;">
+                <button class="view-btn active" data-view="photos" data-project-view="2">Photos</button>
+                <button class="view-btn" data-view="plan" data-project-view="2">Plans</button>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="arch-project-slide" data-project-slide="3">
+              <div class="arch-description">
+                <h3>Project 4 - GOWRI ESPANA</h3>
+                <p>A commercial complex project with modern amenities and design, suitable for a variety of businesses and services.</p>
+              </div>
+              <div class="arch-gallery-view" data-gallery-view="3">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-gallery-left="3">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="gallery-image" data-gallery-img="3" src="./assets/images/projects/GOWRI ESPANA/Photos/GOWRI ESPANA.jpg" alt="Project 4 Photo" />
+                    <button class="enlarge-btn" data-enlarge="3" title="Enlarge"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-img-caption="3"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-gallery-right="3">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-plan-carousel-view" data-plan-carousel-view="3" style="display:none;">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-plan-gallery-left="3">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="plan-image" data-plan-gallery-img="3" src="./assets/images/projects/GOWRI ESPANA/Plans/GOWRI ESPANA- PLAN -Model.jpg" alt="Project 4 Plan" />
+                    <button class="enlarge-btn plan-enlarge" data-plan-enlarge="3" title="Enlarge Plan"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-plan-caption="3"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-plan-gallery-right="3">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-view-toggle" style="margin-top:1.2rem;">
+                <button class="view-btn active" data-view="photos" data-project-view="3">Photos</button>
+                <button class="view-btn" data-view="plan" data-project-view="3">Plans</button>
+              </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="arch-project-slide" data-project-slide="4">
+              <div class="arch-description">
+                <h3>Project 5 - School - DAFFODIL</h3>
+                <p>A school project with a focus on learning spaces, safety, and a nurturing environment for students.</p>
+              </div>
+              <div class="arch-gallery-view" data-gallery-view="4">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-gallery-left="4">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="gallery-image" data-gallery-img="4" src="./assets/images/projects/School - DAFFODIL/Photos/ELEVATION RENDER.jpg" alt="Project 5 Photo" />
+                    <button class="enlarge-btn" data-enlarge="4" title="Enlarge"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-img-caption="4"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-gallery-right="4">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-plan-carousel-view" data-plan-carousel-view="4" style="display:none;">
+                <div class="arch-gallery">
+                  <button class="gallery-arrow left" data-plan-gallery-left="4">&#8592;</button>
+                  <div class="carousel-wrapper">
+                    <img class="plan-image" data-plan-gallery-img="4" src="./assets/images/projects/School - DAFFODIL/Plans/DAFFODIL- PLAN.jpg" alt="Project 5 Plan" />
+                    <button class="enlarge-btn plan-enlarge" data-plan-enlarge="4" title="Enlarge Plan"><span class="enlarge-icon">&#128269;</span><span class="enlarge-label">Enlarge</span></button>
+                    <div class="img-caption" data-plan-caption="4"></div>
+                  </div>
+                  <button class="gallery-arrow right" data-plan-gallery-right="4">&#8594;</button>
+                </div>
+              </div>
+              <div class="arch-view-toggle" style="margin-top:1.2rem;">
+                <button class="view-btn active" data-view="photos" data-project-view="4">Photos</button>
+                <button class="view-btn" data-view="plan" data-project-view="4">Plans</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          .arch-portfolio {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 0;
+          }
+          .arch-project-toggles {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            background: none;
+          }
+          .arch-toggle {
+            padding: 0.7rem 2rem;
+            border: none;
+            background: none;
+            font-size: 1.1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            color: #FFD700;
+            font-weight: 500;
+            transition: color 0.2s, background 0.2s;
+          }
+          .arch-toggle.active, .arch-toggle:focus {
+            background: #FFD700;
+            color: #222;
+          }
+          .arch-toggle:hover {
+            color: #bfa100;
+          }
+          .arch-projects-container {
+            position: relative;
+            min-height: 500px;
+          }
+          .arch-project-slide {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            animation: fadeIn 0.5s;
+          }
+          .arch-project-slide.active {
+            display: flex;
+          }
+          @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+          .arch-view-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            background: none;
+            border: none;
+            border-radius: 2rem;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: none;
+            overflow: visible;
+          }
+          .view-btn {
+            padding: 0.5rem 2.2rem;
+            border: none;
+            background: none;
+            font-size: 1.1rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            color: #FFD700;
+            font-weight: 500;
+            transition: color 0.2s, background 0.2s;
+          }
+          .view-btn.active, .view-btn:focus {
+            background: #FFD700;
+            color: #222;
+          }
+          .view-btn:hover {
+            color: #bfa100;
+          }
+          .arch-gallery {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 1.5rem;
+          }
+          .carousel-wrapper {
+            width: 500px;
+            height: 360px;
+            max-width: 100%;
+            min-width: 280px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: #fafafa;
+            position: relative;
+            margin-bottom: 0;
+          }
+          .arch-plan-view {
+            width: 500px;
+            height: 360px;
+            max-width: 100%;
+            min-width: 280px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            position: relative;
+          }
+          .gallery-arrow {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #FFD700;
+            padding: 0 0.5rem;
+            transition: color 0.2s;
+            z-index: 2;
+          }
+          .gallery-arrow:hover {
+            color: #bfa100;
+          }
+          .gallery-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: opacity 0.3s;
+            display: block;
+            margin: 0 auto;
+          }
+          .plan-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 0.7rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: block;
+            margin: 0 auto;
+          }
+          .arch-description {
+            text-align: center;
+            margin-top: 1rem;
+            max-width: 700px;
+            color: #fff;
+            margin-bottom: 1.5rem;
+          }
+          .enlarge-btn {
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            background: rgba(34,34,34,0.85);
+            color: #FFD700;
+            border: none;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            font-size: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 3;
+            transition: background 0.2s, color 0.2s;
+            padding: 0;
+          }
+          .enlarge-btn:hover {
+            background: #FFD700;
+            color: #222;
+          }
+          .enlarge-icon {
+            font-size: 1.45rem;
+            line-height: 1.1;
+            color: inherit;
+            display: block;
+          }
+          .enlarge-label {
+            display: block;
+            font-size: 0.82rem;
+            color: #FFD700;
+            margin-top: 0.1rem;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            line-height: 1.1;
+            pointer-events: none;
+            user-select: none;
+          }
+          .img-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: #FFD700;
+            font-size: 1.02rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            text-shadow: 0 1px 4px #222;
+            user-select: none;
+            pointer-events: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            background: rgba(34,34,34,0.12);
+            padding-bottom: 0.2rem;
+            z-index: 2;
+          }
+        </style>
+        <style>
+          /* Responsive styles for architecture portfolio */
+          @media (max-width: 900px) {
+            .carousel-wrapper,
+            .arch-plan-view {
+              width: 90vw;
+              max-width: 90vw;
+              min-width: 180px;
+              height: 60vw;
+              max-height: 420px;
+              min-height: 120px;
+            }
+          }
+          @media (max-width: 600px) {
+            .arch-portfolio {
+              padding: 1rem 0;
+            }
+            .carousel-wrapper,
+            .arch-plan-view {
+              width: 98vw;
+              max-width: 98vw;
+              min-width: 120px;
+              height: 60vw;
+              max-height: 320px;
+              min-height: 90px;
+            }
+            .plan-image,
+            .gallery-image {
+              max-width: 100%;
+              max-height: 100%;
+            }
+            .arch-project-toggles,
+            .arch-view-toggle {
+              gap: 0.5rem;
+            }
+            .arch-toggle,
+            .view-btn {
+              padding: 0.5rem 1.1rem;
+              font-size: 1rem;
+            }
+            .arch-description {
+              font-size: 0.98rem;
+              padding: 0 0.5rem;
+            }
+            .gallery-arrow {
+              font-size: 1.3rem;
+              padding: 0 0.2rem;
+            }
+          }
+          @media (max-width: 400px) {
+            .carousel-wrapper,
+            .arch-plan-view {
+              min-width: 90px;
+              min-height: 60px;
+              height: 38vw;
+            }
+            .arch-toggle,
+            .view-btn {
+              padding: 0.4rem 0.7rem;
+              font-size: 0.92rem;
+            }
+            .arch-description {
+              font-size: 0.92rem;
+            }
+            .gallery-arrow {
+              font-size: 1.1rem;
+            }
+          }
+        </style>
+        <script>
+          // Project images (replace/add as needed)
+          const archProjects = [
+            {
+              title: 'Project 1 - Residential - Nalini',
+              photos: [
+                './assets/images/projects/Residential - Nalini/Photos/BEDRM.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/ENTRANCE.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/FF BALCONY.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/FF FAMILY.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/FRONT ELEV.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/FRONT ELEVATION.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/GYM.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/LIVING.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/SOUTH SITOUT 2.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/SOUTH SITOUT.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/STAIRCASE WINDOW.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/STAIRCASE.jpg',
+                './assets/images/projects/Residential - Nalini/Photos/TOWARDS GATE FROM FRONT DOOR.jpg'
+              ],
+              plans: [
+                './assets/images/projects/Residential - Nalini/Plans/SITE PLAN.jpg',
+                './assets/images/projects/Residential - Nalini/Plans/GF PLAN.jpg'
+              ],
+              desc: 'A modern villa design featuring open spaces, natural lighting, and sustainable materials. The project emphasizes harmony between indoor and outdoor living.'
+            },
+            {
+              title: 'Project 2 - H1',
+              photos: [
+                './assets/images/projects/H1/Photos/ELEVATION FROM GARDEN.jpg',
+                './assets/images/projects/H1/Photos/BEDRM.jpg',
+                './assets/images/projects/H1/Photos/COURTYARD.jpg',
+                './assets/images/projects/H1/Photos/DINING FROM KITCHEN.jpg',
+                './assets/images/projects/H1/Photos/ELEV. FROM GATE.jpg',
+                './assets/images/projects/H1/Photos/ELEVATION 2.jpg',
+                './assets/images/projects/H1/Photos/FLOORING DETAIL.jpg',
+                './assets/images/projects/H1/Photos/FROM FF LANDING.jpg',
+                './assets/images/projects/H1/Photos/FRONT ELEVATION 2.jpg',
+                './assets/images/projects/H1/Photos/FRONT ELEVATION.jpg',
+                './assets/images/projects/H1/Photos/GF BEDRM.jpg',
+                './assets/images/projects/H1/Photos/KITCHEN.jpg',
+                './assets/images/projects/H1/Photos/LIVING FROM ENTRANCE.jpg',
+                './assets/images/projects/H1/Photos/STAIRCASE.jpg',
+                './assets/images/projects/H1/Photos/STUDY.jpg'
+              ],
+              plans: [
+                './assets/images/projects/H1/Plans/SMITHA  H-1 GF PLAN-Model.jpg'
+              ],
+              desc: 'An urban apartment complex designed for efficient use of space and community living. Features include rooftop gardens and smart home integration.'
+            },
+            {
+              title: 'Project 3 - H2',
+              photos: [
+                './assets/images/projects/H2/Photos/VIEW FROM FF.jpg',
+                './assets/images/projects/H2/Photos/STUDY.jpg',
+                './assets/images/projects/H2/Photos/STAIRCASE.jpg',
+                './assets/images/projects/H2/Photos/MOTHER OF PEARLS INLAY.jpg',
+                './assets/images/projects/H2/Photos/MARBLE INLAY ON FLOOR.jpg',
+                './assets/images/projects/H2/Photos/MAIN DOOR.jpg',
+                './assets/images/projects/H2/Photos/LIVING.jpg',
+                './assets/images/projects/H2/Photos/INLAY DETAILS ON STEP.jpg',
+                './assets/images/projects/H2/Photos/ENTRANCE FRON ROAD 2.jpg',
+                './assets/images/projects/H2/Photos/ENT. GATE FROM FRONT DOOR.jpg',
+                './assets/images/projects/H2/Photos/ENT. FROM ROAD.jpg',
+                './assets/images/projects/H2/Photos/COURTYARD.jpg',
+                './assets/images/projects/H2/Photos/COURTYARD  FROM FF.jpg'
+              ],
+              plans: [
+                './assets/images/projects/H2/Plans/H2- GF,FF,TF PLAN.jpg',
+                './assets/images/projects/H2/Plans/H2- GF PLAN.jpg'
+              ],
+              desc: 'A community center designed to foster social interaction and inclusivity, with multi-purpose halls, green spaces, and accessible facilities.'
+            },
+            {
+              title: 'Project 4 - GOWRI ESPANA',
+              photos: [
+                './assets/images/projects/GOWRI ESPANA/Photos/GOWRI ESPANA.jpg'
+              ],
+              plans: [
+                './assets/images/projects/GOWRI ESPANA/Plans/GOWRI ESPANA- PLAN -Model.jpg'
+              ],
+              desc: 'A commercial complex project with modern amenities and design, suitable for a variety of businesses and services.'
+            },
+            {
+              title: 'Project 5 - School - DAFFODIL',
+              photos: [
+                './assets/images/projects/School - DAFFODIL/Photos/ELEVATION RENDER.jpg',
+                './assets/images/projects/School - DAFFODIL/Photos/ELEVATION.png'
+              ],
+              plans: [
+                './assets/images/projects/School - DAFFODIL/Plans/DAFFODIL- PLAN.jpg'
+              ],
+              desc: 'A school project with a focus on learning spaces, safety, and a nurturing environment for students.'
+            }
+          ];
+
+          document.addEventListener('DOMContentLoaded', function() {
+            // Project toggles
+            const toggles = document.querySelectorAll('.arch-toggle');
+            const slides = document.querySelectorAll('.arch-project-slide');
+            toggles.forEach((btn, idx) => {
+              btn.addEventListener('click', () => {
+                toggles.forEach(b => b.classList.remove('active'));
+                slides.forEach(s => s.classList.remove('active'));
+                btn.classList.add('active');
+                slides[idx].classList.add('active');
+              });
+            });
+
+            // View toggles (Photos/Plan)
+            const viewBtns = document.querySelectorAll('.view-btn');
+            viewBtns.forEach(btn => {
+              btn.addEventListener('click', function() {
+                const projIdx = this.getAttribute('data-project-view');
+                const isPhotos = this.getAttribute('data-view') === 'photos';
+                // Toggle button active state
+                document.querySelectorAll('.view-btn[data-project-view="' + projIdx + '"]').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // Toggle views
+                document.querySelector('[data-gallery-view="' + projIdx + '"]').style.display = isPhotos ? '' : 'none';
+                document.querySelector('[data-plan-carousel-view="' + projIdx + '"]').style.display = isPhotos ? 'none' : '';
+              });
+            });
+
+            // Gallery navigation and auto-advance for photos and plans
+            // Store current index for each project globally (photos and plans)
+            const currentIndexes = [0, 0, 0, 0, 0];
+            const currentPlanIndexes = [0, 0, 0, 0, 0];
+            archProjects.forEach((proj, projIdx) => {
+              // Photos carousel
+              let current = 0;
+              const img = document.querySelector(`[data-gallery-img="${projIdx}"]`);
+              const left = document.querySelector(`[data-gallery-left="${projIdx}"]`);
+              const right = document.querySelector(`[data-gallery-right="${projIdx}"]`);
+              let interval = null;
+              function updateImg() {
+                img.style.opacity = 0.5;
+                setTimeout(() => {
+                  img.src = proj.photos[current];
+                  img.style.opacity = 1;
+                }, 150);
+                currentIndexes[projIdx] = current;
+                // Update caption
+                const imgCaption = document.querySelector(`[data-img-caption="${projIdx}"]`);
+                const src = proj.photos[current];
+                let name = src.split('/').pop().replace(/\.[^/.]+$/, "");
+                imgCaption.textContent = name;
+              }
+              left.addEventListener('click', () => {
+                current = (current - 1 + proj.photos.length) % proj.photos.length;
+                updateImg();
+                resetInterval();
+              });
+              right.addEventListener('click', () => {
+                current = (current + 1) % proj.photos.length;
+                updateImg();
+                resetInterval();
+              });
+              function autoAdvance() {
+                interval = setInterval(() => {
+                  current = (current + 1) % proj.photos.length;
+                  updateImg();
+                }, 2500);
+              }
+              function resetInterval() {
+                clearInterval(interval);
+                autoAdvance();
+              }
+              autoAdvance();
+              // Pause auto-advance on hover
+              img.addEventListener('mouseenter', () => clearInterval(interval));
+              img.addEventListener('mouseleave', () => autoAdvance());
+
+              // Plans carousel
+              let planCurrent = 0;
+              const planImg = document.querySelector(`[data-plan-gallery-img="${projIdx}"]`);
+              const planLeft = document.querySelector(`[data-plan-gallery-left="${projIdx}"]`);
+              const planRight = document.querySelector(`[data-plan-gallery-right="${projIdx}"]`);
+              let planInterval = null;
+              function updatePlanImg() {
+                planImg.style.opacity = 0.5;
+                setTimeout(() => {
+                  planImg.src = proj.plans[planCurrent];
+                  planImg.style.opacity = 1;
+                }, 150);
+                currentPlanIndexes[projIdx] = planCurrent;
+                // Update caption
+                const planCaption = document.querySelector(`[data-plan-caption="${projIdx}"]`);
+                const src = proj.plans[planCurrent];
+                let name = src.split('/').pop().replace(/\.[^/.]+$/, "");
+                planCaption.textContent = name;
+              }
+              planLeft.addEventListener('click', () => {
+                planCurrent = (planCurrent - 1 + proj.plans.length) % proj.plans.length;
+                updatePlanImg();
+                resetPlanInterval();
+              });
+              planRight.addEventListener('click', () => {
+                planCurrent = (planCurrent + 1) % proj.plans.length;
+                updatePlanImg();
+                resetPlanInterval();
+              });
+              function autoPlanAdvance() {
+                planInterval = setInterval(() => {
+                  planCurrent = (planCurrent + 1) % proj.plans.length;
+                  updatePlanImg();
+                }, 2500);
+              }
+              function resetPlanInterval() {
+                clearInterval(planInterval);
+                autoPlanAdvance();
+              }
+              autoPlanAdvance();
+              // Pause auto-advance on hover
+              planImg.addEventListener('mouseenter', () => clearInterval(planInterval));
+              planImg.addEventListener('mouseleave', () => autoPlanAdvance());
+
+              // Keyboard navigation for both carousels
+              document.addEventListener('keydown', function(e) {
+                const slide = document.querySelector(`.arch-project-slide[data-project-slide="${projIdx}"]`);
+                const galleryView = document.querySelector(`[data-gallery-view="${projIdx}"]`);
+                const planCarouselView = document.querySelector(`[data-plan-carousel-view="${projIdx}"]`);
+                if (!slide.classList.contains('active')) return;
+                // Photos
+                if (galleryView.style.display !== 'none') {
+                  if (e.key === 'ArrowLeft') {
+                    current = (current - 1 + proj.photos.length) % proj.photos.length;
+                    updateImg();
+                    resetInterval();
+                  } else if (e.key === 'ArrowRight') {
+                    current = (current + 1) % proj.photos.length;
+                    updateImg();
+                    resetInterval();
+                  }
+                }
+                // Plans
+                if (planCarouselView.style.display !== 'none') {
+                  if (e.key === 'ArrowLeft') {
+                    planCurrent = (planCurrent - 1 + proj.plans.length) % proj.plans.length;
+                    updatePlanImg();
+                    resetPlanInterval();
+                  } else if (e.key === 'ArrowRight') {
+                    planCurrent = (planCurrent + 1) % proj.plans.length;
+                    updatePlanImg();
+                    resetPlanInterval();
+                  }
+                }
+              });
+            });
+
+            // Enlarge modal logic (fixed)
+            const modal = document.getElementById('enlarge-modal');
+            const modalImg = document.getElementById('enlarge-img');
+            const closeBtn = document.getElementById('enlarge-close');
+            // Use event delegation for all enlarge buttons
+            document.body.addEventListener('click', function(e) {
+              const btn = e.target.closest('.enlarge-btn');
+              if (btn) {
+                // Find the active project
+                let activeIdx = 0;
+                document.querySelectorAll('.arch-project-slide').forEach((slide, idx) => {
+                  if (slide.classList.contains('active')) activeIdx = idx;
+                });
+                // If plan enlarge
+                if (btn.classList.contains('plan-enlarge')) {
+                  const planImg = document.querySelector(`[data-plan-gallery-img="${activeIdx}"]`);
+                  const planIdx = currentPlanIndexes[activeIdx];
+                  modal.style.display = 'flex';
+                  modalImg.src = archProjects[activeIdx].plans[planIdx];
+                  return;
+                }
+                // Else, only if photos view is active
+                const galleryView = document.querySelector(`[data-gallery-view="${activeIdx}"]`);
+                if (galleryView.style.display === 'none') return;
+                // Get the current image index for this project
+                const imgIdx = currentIndexes[activeIdx];
+                modal.style.display = 'flex';
+                modalImg.src = archProjects[activeIdx].photos[imgIdx];
+              }
+            });
+            closeBtn.addEventListener('click', function() {
+              modal.style.display = 'none';
+              modalImg.src = '';
+            });
+            modal.addEventListener('click', function(e) {
+              if (e.target === modal) {
+                modal.style.display = 'none';
+                modalImg.src = '';
+              }
+            });
+            document.addEventListener('keydown', function(e) {
+              if (modal.style.display === 'flex' && (e.key === 'Escape' || e.key === 'Esc')) {
+                modal.style.display = 'none';
+                modalImg.src = '';
+              }
+            });
+
+            // Set captions for photos and plans
+            function setCaptions() {
+              archProjects.forEach((proj, projIdx) => {
+                // Photos
+                const img = document.querySelector(`[data-gallery-img="${projIdx}"]`);
+                const imgCaption = document.querySelector(`[data-img-caption="${projIdx}"]`);
+                function updatePhotoCaption(idx) {
+                  const src = proj.photos[idx];
+                  let name = src.split('/').pop().replace(/\.[^/.]+$/, "");
+                  imgCaption.textContent = name;
+                }
+                updatePhotoCaption(0);
+                img.addEventListener('load', function() {
+                  const current = currentIndexes[projIdx];
+                  updatePhotoCaption(current);
+                });
+                // Plans
+                const planImg = document.querySelector(`[data-plan-gallery-img="${projIdx}"]`);
+                const planCaption = document.querySelector(`[data-plan-caption="${projIdx}"]`);
+                function updatePlanCaption(idx) {
+                  const src = proj.plans[idx];
+                  let name = src.split('/').pop().replace(/\.[^/.]+$/, "");
+                  planCaption.textContent = name;
+                }
+                updatePlanCaption(0);
+                planImg.addEventListener('load', function() {
+                  const current = currentPlanIndexes[projIdx];
+                  updatePlanCaption(current);
+                });
+              });
+            }
+            setCaptions();
+          });
+        </script>
+      </article>
+
+
+
+
+
+      <article class="portfolio" data-page="publications">
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="machine learning">
+              <a href="https://ieeexplore.ieee.org/document/10084179" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/graph.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Classification of Quantum Graph State Codes using Decision Trees</h3>
+
+                <p class="project-category">Machine Learning</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Image Encryption">
+              <a href="https://drive.google.com/file/d/1l5Qys0mOB-9SDOCaewMO3t8czLiQ1Saz/view" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Image.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Selective Region Hybrid Multiple Key Validation System for Effectively Authenticating Digital Images</h3>
+
+                <p class="project-category">Image Encryption, Computer Vision</p>
+
+              </a>
+            </li>
+           
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init('sTxNR_bEi_oIDda_T');
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('myForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_tvbdtmr', 'template_elge6s2', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                            
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                        this.reset();
+                });
+            }
+        </script>
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form id="myForm">
+
+            <div class="input-wrapper">
+              <input type="hidden" name="contact_number">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" value="Send">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+<!-- Enlarge Modal (ensure this is outside the article and just before </body>) -->
+<div id="enlarge-modal" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;">
+  <span id="enlarge-close" style="position:absolute;top:32px;right:48px;font-size:2.5rem;color:#FFD700;cursor:pointer;font-weight:bold;z-index:10001;">&times;</span>
+  <img id="enlarge-img" src="" alt="Enlarged" style="max-width:100vw;max-height:100vh;display:block;margin:auto;" />
+</div>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
